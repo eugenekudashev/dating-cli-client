@@ -4,10 +4,10 @@
   "description": "Command line dating chat app",
   "main": "dating-cli.js",
   "bin": {
-    "dating-cli": "./dating-cli.js"
+    "dating-cli": "./dating_cli.js"
   },
   "scripts": {
-    "start": "node dating-cli.js"
+    "start": "node dating_cli.js"
   },
   "dependencies": {
     "socket.io-client": "^4.7.2",

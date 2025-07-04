@@ -3,6 +3,7 @@
 const io = require("socket.io-client");
 const readline = require("readline");
 const chalk = require("chalk");
+const { exec } = require("child_process");
 
 // Configuration
 const SERVER_URL =
@@ -69,6 +70,7 @@ class DatingCLI {
             `[${timestamp}] ${chalk.bold(data.username)}: ${data.message}`,
           ),
         );
+        exec("afplay /System/Library/Sounds/Ping.aiff");
       }
     });
 
